@@ -262,7 +262,7 @@ function Todo() {
     const api = 'https://todoo.5xcamp.us/todos';
     let headers = new Headers();
     headers.append('Authorization', token);
-    return fetch(api, {
+    fetch(api, {
       method: 'GET',
       headers,
     })
@@ -279,7 +279,7 @@ function Todo() {
       })
   }
 
-  useEffect(() => getTodos, []);
+  useEffect(getTodos, []);
 
   return (
     <>
