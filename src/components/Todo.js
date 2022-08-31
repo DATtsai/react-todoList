@@ -253,7 +253,7 @@ const Logout = () => {
 
 function Todo() {
   const [active, setActive] = useState('all');
-  const [todos, setTodos] = useState([{task: '把冰箱發霉的檸檬拿去丟', done: false}, {task: '打電話叫媽媽匯款給我', done: false}, {task: '買switch', done: false}, {task: '買ps5', done: false}, {task: '打掃房間', done: false}]);
+  const [todos, setTodos] = useState([]);
   const { user } = useUser();
 
   const { token } = useAuth();
