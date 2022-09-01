@@ -63,7 +63,7 @@ function SignUp() {
 
               <label className="formControls_label" htmlFor="pwd">密碼</label>
               <input className="formControls_input" type="password" name="pwd" id="pwd" placeholder="請輸入密碼" {
-                ...register('password', { required: {value: true, message: '必填'}, minLength: {value: 8, message: '長度至少8碼'}})
+                ...register('password', { required: {value: true, message: '必填'}, minLength: {value: 6, message: '長度至少6碼'}})
               } />
               <span>{errors.password?.message}</span>
 
